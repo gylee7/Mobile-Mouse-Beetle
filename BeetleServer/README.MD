@@ -1,3 +1,13 @@
+## Beetle Server ##
+* Server(PC): Mouse + Communication
+
+	- Communication: The server receives real-time position data from the smartphone client via Bluetooth.
+
+	- Mouse: The server processes the smartphone's position data and converts it into cursor positions on the monitor.
+
+I integrated Bluetooth functionality and the feature that processes smartphone position data to convert it into cursor positions on the monitor into the existing NaturalMouseMotion library.
+
+
 ## NaturalMouseMotion ##
 
 This library provides a way to move cursor to specified coordinates on screen reliably,
@@ -152,4 +162,7 @@ There are several possible causes to that behavior:
 * There might be some security setting in your computer preventing the mouse from moving:
    [Robot issue on Mac OS Mojave](https://bugs.openjdk.java.net/browse/JDK-8218487)
 * There's an actual bug somewhere in the NaturalMouseMotion library that needs fixing on the library side.
+
+## Note
+The BeetleServer file should be run in Eclipse.
 
